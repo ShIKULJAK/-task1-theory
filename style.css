@@ -220,7 +220,7 @@
     }
     
     .blog article {
-        width: 40%;
+        width: 50%;
         float: left;
         padding: 30px;
     }
@@ -252,13 +252,28 @@
     }
     /* ----RESPONSIVE---- */
     
-    @media(min-width:1200px) {
+    @media(min-width:768px) and (max-width:1200px) {
         h2 {
             font-size: 2rem;
         }
+        .intro article {
+            width: 100%;
+            border: none;
+        }
+        .intro article h2 {
+            font-size: 1.3rem;
+        }
+        .intro article p {
+            font-size: .9rem;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+        }
     }
     
-    @media(max-width:1050px) {
+    @media(max-width:768px) {
         /* ----HEADER-NAV---- */
         nav ul li a {
             margin: 5px;
