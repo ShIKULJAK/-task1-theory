@@ -1,0 +1,320 @@
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+     :root {
+        --fonts: 'Raleway', sans-serif;
+        --fontSize: 16px;
+        --white: #fff;
+        --lightgray: lightgray;
+        --gray: #9a9a9a;
+        --blue: #5385c1;
+        --transition: .4s ease;
+        --padding: 100px 0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: var(--fonts);
+        font-size: var(--fontSize);
+        letter-spacing: 2px;
+        color: var(--gray);
+        line-height: 2;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .container::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    /* ----HEADER---- */
+    
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/img/header.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .logo {
+        float: left;
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 300;
+    }
+    
+    .logo:hover {
+        color: var(--blue);
+    }
+    
+    nav {
+        padding-top: 30px;
+    }
+    
+    nav ul {
+        float: right;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav ul li a {
+        color: var(--white);
+        text-decoration: none;
+        padding-left: 50px;
+        text-transform: uppercase;
+    }
+    
+    nav ul li a:hover {
+        color: var(--blue);
+    }
+    
+    .header-central {
+        text-align: center;
+        padding: 200px 0 300px 0;
+        color: var(--white);
+    }
+    
+    .header-central h1 {
+        font-size: 4rem;
+    }
+    
+    .header-central h5 {
+        font-size: 1.2rem;
+        padding-top: 30px;
+    }
+    /* ----INTRO---- */
+    
+    .intro {
+        padding: 150px;
+    }
+    
+    .intro article {
+        width: 33%;
+        float: left;
+        padding: 50px;
+        border-right: 1px solid var(--lightgray);
+    }
+    
+    .intro article h2 {
+        padding-bottom: 30px;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.3rem;
+        color: var(--blue);
+        text-align: left;
+    }
+    
+    .intro article p {
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        font-size: .6rem;
+        font-weight: 200;
+        line-height: 1.3rem;
+        color: var(--gray);
+        text-align: left;
+    }
+    
+    .intro article:last-child {
+        border-right: none;
+    }
+    
+    .btn-intro,
+    .btn-blog {
+        padding: 10px 15px;
+        background-color: var(--blue);
+        color: var(--white);
+        border: none;
+        text-transform: uppercase;
+    }
+    /* ----OUR TEAM---- */
+    
+    .our-team {
+        background: var(--blue);
+        padding: 100px 100px;
+        text-align: center;
+    }
+    
+    .our-team article {
+        width: 25%;
+        float: left;
+    }
+    
+    .our-team h2 {
+        color: var(--white);
+        font-size: 2.5rem;
+        font-weight: 100;
+        padding-bottom: 10px;
+    }
+    
+    .our-team p {
+        color: var(--lightgray);
+        font-size: 1rem;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+    
+    .our-team .wrapper {
+        border: 1px solid var(--lightgray);
+        margin: 20px;
+        padding: 30px 0px;
+        text-align: center;
+    }
+    
+    .our-team .wrapper img {
+        width: 55%;
+        border-radius: 50%;
+    }
+    
+    .our-team article .wrapper h6 {
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 10px 0;
+    }
+    
+    .our-team article .wrapper p {
+        color: var(--lightgray);
+        font-size: .9rem;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    /* ----LATEST ON BLOG---- */
+    
+    .blog {
+        width: 100%;
+        padding: 150px;
+        display: inline-block;
+    }
+    
+    .blog h2,
+    p {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .blog h2 {
+        font-size: 3rem;
+    }
+    
+    .blog article p {
+        font-size: .9rem;
+        text-align: left;
+    }
+    
+    .blog article {
+        width: 40%;
+        float: left;
+        padding: 30px;
+    }
+    
+    article img {
+        width: 100%;
+    }
+    
+    article h4 {
+        font-size: 2.5rem;
+        color: var(--blue);
+    }
+    
+    article p {
+        font-size: .9rem;
+    }
+    /* ----FOOTER---- */
+    
+    footer {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--blue);
+        border-top: 1px solid var(--lightgray);
+    }
+    
+    footer i {
+        margin-left: 15px;
+        padding-top: 30px;
+    }
+    /* ----RESPONSIVE---- */
+    
+    @media(min-width:1200px) {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    
+    @media(max-width:1050px) {
+        /* ----HEADER-NAV---- */
+        nav ul li a {
+            margin: 5px;
+            padding: 5px;
+        }
+        .logo {
+            margin-left: 100px;
+        }
+        .header-central {
+            margin: 1px;
+            padding-top: 150px;
+        }
+        .header-central h1 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        .header-central h5 {
+            font-size: 1.5rem;
+        }
+        /* ----INTRO---- */
+        .intro {
+            width: 100%;
+            padding: 0 2px;
+            display: inline-block;
+            border: none;
+        }
+        .intro article {
+            width: 100%;
+            padding: 50px;
+            border-right: none;
+        }
+        /* ----OUR TEAM---- */
+        .our-team {
+            padding: 20px;
+        }
+        .our-team h2 {
+            padding: 5px;
+            font-size: 2rem;
+        }
+        .our-team article {
+            width: 100%;
+        }
+        /* ----LATEST ON BLOG---- */
+        .blog {
+            width: 100%;
+            padding: 20px 20px 80px 20px;
+        }
+        .blog h2 {
+            font-size: 2rem;
+        }
+        .blog article {
+            width: 100%;
+            text-align: justify;
+        }
+        /* ----FOOTER---- */
+        footer {
+            padding-top: 10px;
+        }
+    }
